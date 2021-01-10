@@ -10,9 +10,11 @@
   "scripts": {
     "dev": "nodemon index.js --ignore client",
     "lint": "eslint .",
-    "no-console": "bash ../../githooks/dist/noConsole.sh"
+    "no-console": "bash ../../githooks/dist/noConsole.sh",
+    "no-dontmerge": "bash ../../githooks/dist/noDontmerge.sh"
   },
   "pre-commit": [
+    "no-dontmerge",
     "no-console",
     "lint"
   ],
