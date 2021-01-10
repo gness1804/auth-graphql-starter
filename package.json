@@ -11,12 +11,14 @@
     "dev": "nodemon index.js --ignore client",
     "lint": "eslint .",
     "no-console": "bash ../../githooks/dist/noConsole.sh",
-    "no-dontmerge": "bash ../../githooks/dist/noDontmerge.sh"
+    "no-dontmerge": "bash ../../githooks/dist/noDontmerge.sh",
+    "prettier:check": "prettier --check ."
   },
   "pre-commit": [
     "no-dontmerge",
     "no-console",
-    "lint"
+    "lint",
+    "prettier:check"
   ],
   "author": "",
   "license": "ISC",
@@ -43,6 +45,7 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "pre-commit": "^1.2.2",
+    "prettier": "^2.2.1",
     "react": "^15.4.2",
     "react-apollo": "^0.10.0",
     "react-dom": "^15.4.2",
