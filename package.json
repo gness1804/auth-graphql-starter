@@ -9,9 +9,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js --ignore client",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "no-console": "bash ../../githooks/dist/noConsole.sh"
   },
   "pre-commit": [
+    "no-console",
     "lint"
   ],
   "author": "",
