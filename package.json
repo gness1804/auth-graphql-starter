@@ -12,7 +12,8 @@
     "lint": "eslint .",
     "no-console": "bash ../../githooks/dist/noConsole.sh",
     "no-dontmerge": "bash ../../githooks/dist/noDontmerge.sh",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
   },
   "pre-commit": [
     "no-dontmerge",
